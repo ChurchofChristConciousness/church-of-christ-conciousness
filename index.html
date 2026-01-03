@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Christ Consciousness Church</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --gold: #d6b75a;
+      --forest: #2f4f3a;
+      --earth: #5a4632;
+      --sky: #cfe6e0;
+      --parchment: #f7f4ee;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      color: #1f1f1f;
+      background:
+        linear-gradient(180deg, rgba(207,230,224,0.65), rgba(247,244,238,0.9)),
+        url('https://upload.wikimedia.org/wikipedia/commons/3/3a/Leaves_background_texture.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* subtle botanical overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0b/Vintage_floral_pattern.png');
+      opacity: 0.08;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+      background: linear-gradient(180deg, rgba(47,79,58,0.85), rgba(47,79,58,0.45));
+      border-bottom: 4px solid var(--gold);
+    }
+
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3rem;
+      letter-spacing: 0.18em;
+      color: #f4e6b0;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #eef4ef;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem 2rem;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.75);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--forest);
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.1em;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      position: relative;
+    }
+
+    nav a:hover {
+      background: rgba(214,183,90,0.25);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 3rem 2.5rem;
+      background: rgba(247,244,238,0.96);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+      border: 1px solid rgba(90,70,50,0.25);
+    }
+
+    section h2 {
+      font-family: 'Cinzel', serif;
+      color: var(--earth);
+      text-align: center;
+      letter-spacing: 0.15em;
+      margin-bottom: 2.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .icon-card {
+      text-align: center;
+      padding: 2.5rem 1.75rem;
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, #ffffff, #efe8d3);
+      border: 1px solid rgba(214,183,90,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0,0,0,0.22);
+    }
+
+    .icon-card i {
+      font-size: 2.3rem;
+      color: var(--forest);
+      margin-bottom: 1.2rem;
+    }
+
+    .icon-card h3 {
+      font-family: 'Cinzel', serif;
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+      color: var(--earth);
+    }
+
+    .icon-card a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: var(--forest);
+      border-bottom: 1px solid var(--forest);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: #2f3f35;
+      font-size: 0.85rem;
+      background: rgba(207,230,224,0.6);
+      border-top: 1px solid rgba(0,0,0,0.15);
+    }
+
+    footer a { color: var(--forest); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Christ Consciousness Church</h1>
+  <p>A living ecclesiastical body devoted to worship, instruction, stewardship, and the sanctified use of land and trust for the benefit of the public and the glory of God.</p>
+</header>
+
+<nav>
+  <a href="#beliefs">Beliefs</a>
+  <a href="beliefs.pdf" target="_blank">Beliefs (PDF)</a>
+  <a href="#trust">Trust & Governance</a>
+  <a href="trust.pdf" target="_blank">Trust (PDF)</a>
+  <a href="#history">77 Brinkerhoff Street</a>
+  <a href="history.pdf" target="_blank">History (PDF)</a>
+  <a href="#projects">Projects</a>
+  <a href="projects.pdf" target="_blank">Projects (PDF)</a>
+  <a href="#mission">Mission</a>
+  <a href="mission.pdf" target="_blank">Mission (PDF)</a>
+</nav>
+
+<section id="beliefs">
+  <h2>Beliefs & Practices</h2>
+  <div class="icon-grid">
+    <div class="icon-card"><i class="fa-solid fa-cross"></i><h3>Worship</h3><p>Regular gatherings for prayer, contemplation, and sacramental observance.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-dove"></i><h3>Christ Consciousness</h3><p>Living in alignment with divine law, compassion, and spiritual awareness.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-book-bible"></i><h3>Instruction</h3><p>Teaching scripture, moral philosophy, and spiritual discipline.</p></div>
+  </div>
+</section>
+
+<section id="trust">
+  <h2>Trust & Governance</h2>
+  <div class="icon-grid">
+    <div class="icon-card"><i class="fa-solid fa-scale-balanced"></i><h3>Ecclesiastical Trust</h3><p>Property and assets are held in trust for religious use and public benefit.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-landmark"></i><h3>420-a Alignment</h3><p>Primary use of property is worship, instruction, and ministry.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-handshake"></i><h3>Stewardship</h3><p>No private inurement. Trustees serve as caretakers, not beneficiaries.</p></div>
+  </div>
+</section>
+
+<section id="history">
+  <h2>77 Brinkerhoff Street</h2>
+  <div class="icon-grid">
+    <div class="icon-card"><i class="fa-solid fa-building-columns"></i><h3>Historic Structure</h3><p>A site of long-standing communal and spiritual use.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-scroll"></i><h3>Recorded History</h3><p>Documented use consistent with assembly, learning, and service.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-map-location-dot"></i><h3>Sanctuary</h3><p>Maintained as a place of peace, refuge, and spiritual reflection.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="icon-grid">
+    <div class="icon-card"><i class="fa-solid fa-seedling"></i><h3>Stewardship Projects</h3><p>Land, water, and resource stewardship initiatives.</p></div>
+    <div class="icon-card"><i class="fa-solid fa-people-group"></i><h3>Community Ministry</h3><p>Service programs for education, wellness, and outreach.</p></div>
+  </div>
+</section>
+
+<section id="mission">
+  <h2>Mission</h2>
+  <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+    The mission of The Christ Consciousness Church is to uphold divine law through worship, instruction, and the faithful stewardship of trust property, offering a sanctuary for spiritual growth and public benefit.
+  </p>
+</section>
+
+<footer>
+  <p>© Ecclesiastical Trust — The Christ Consciousness Church</p>
+  <p>Public records and governing documents available upon lawful request.</p>
+</footer>
+
+</body>
+</html>
+<!-- PDF CONTENT START -->
+<!-- See separate documents for Trust, Beliefs, Mission, History, Projects -->
