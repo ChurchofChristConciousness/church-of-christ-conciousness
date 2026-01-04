@@ -1,0 +1,80 @@
+/* ===== GLOBAL RESET ===== */
+body {
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  color: #1f1f1f;
+  background: #f6f4ee;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(180deg,#2f4f3a,#1f3628);
+  color: #f4e6b0;
+}
+
+header h1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.15em;
+}
+
+/* ===== NAVIGATION ===== */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 1.2rem;
+  background: rgba(255,255,255,0.94);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+.main-nav a {
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+  color: #2f4f3a;
+  letter-spacing: 0.12em;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  background: rgba(214,183,90,0.25);
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+main p {
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== BUTTONS ===== */
+a.button {
+  display: inline-block;
+  padding: 0.6rem 1.6rem;
+  background: #2f4f3a;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+a.button:hover {
+  background: #1f3628;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.85rem;
+  background: #e3e0d8;
+}
