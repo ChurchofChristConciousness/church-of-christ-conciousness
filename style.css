@@ -1,4 +1,11 @@
-/* ===== GLOBAL RESET ===== */
+/* =========================================================
+   GLOBAL RESET & BASE
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Libre Baskerville', serif;
@@ -6,27 +13,42 @@ body {
   background: #f6f4ee;
 }
 
-/* ===== HEADER ===== */
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 header {
   text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(180deg,#2f4f3a,#1f3628);
+  padding: 3.5rem 1rem;
+  background: linear-gradient(180deg, #2f4f3a, #1f3628);
   color: #f4e6b0;
 }
 
 header h1 {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.15em;
+  margin-bottom: 0.8rem;
 }
 
-/* ===== NAVIGATION ===== */
+header p {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   NAVIGATION (UNIFIED ACROSS ALL PAGES)
+   ========================================================= */
+
 .main-nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.6rem;
   padding: 1.2rem;
-  background: rgba(255,255,255,0.94);
-  border-bottom: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .main-nav a {
@@ -36,20 +58,29 @@ header h1 {
   letter-spacing: 0.12em;
   padding: 0.4rem 0.7rem;
   border-radius: 6px;
+  transition: background 0.2s ease;
 }
 
 .main-nav a:hover {
-  background: rgba(214,183,90,0.25);
+  background: rgba(214, 183, 90, 0.25);
 }
 
-/* ===== MAIN CONTENT ===== */
+/* Active page indicator */
+.main-nav a.active {
+  background: rgba(214, 183, 90, 0.35);
+}
+
+/* =========================================================
+   MAIN CONTENT WRAPPER
+   ========================================================= */
+
 main {
   max-width: 1000px;
-  margin: 3rem auto;
+  margin: 3.5rem auto;
   padding: 2.5rem;
-  background: white;
+  background: #ffffff;
   border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 main p {
@@ -57,12 +88,67 @@ main p {
   margin-bottom: 1.5rem;
 }
 
-/* ===== BUTTONS ===== */
+/* =========================================================
+   SECTION GRID (INDEX PAGE)
+   ========================================================= */
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+}
+
+/* =========================================================
+   CARDS (INDEX PAGE)
+   ========================================================= */
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+  font-size: 2.5rem;
+  color: #2f4f3a;
+  margin-bottom: 1.2rem;
+}
+
+.card h2 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.6rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.6rem;
+  background: #2f4f3a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+.card a:hover {
+  background: #1f3628;
+}
+
+/* =========================================================
+   BUTTONS (PDF + ACTION LINKS)
+   ========================================================= */
+
 a.button {
   display: inline-block;
   padding: 0.6rem 1.6rem;
   background: #2f4f3a;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 30px;
 }
@@ -71,10 +157,43 @@ a.button:hover {
   background: #1f3628;
 }
 
-/* ===== FOOTER ===== */
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.85rem;
   background: #e3e0d8;
+}
+
+/* =========================================================
+   PAGE-SPECIFIC THEMES
+   ========================================================= */
+
+/* Mission page – sacred blue paisley */
+body.sacred-theme {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(230, 238, 248, 0.95),
+      rgba(210, 225, 245, 0.95)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Paisley_pattern_blue.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Projects page – wood / earth tone */
+body.wood-theme {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(245, 235, 220, 0.95),
+      rgba(230, 215, 195, 0.95)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/6/6f/Wood_texture.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
