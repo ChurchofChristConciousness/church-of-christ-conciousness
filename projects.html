@@ -1,106 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects & Ministries</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Ministries — The Christ Consciousness Church</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
 
-<style>
-body {
-  font-family: 'Libre Baskerville', serif;
-  margin: 0;
-  color: #2a1f16;
-  background:
-    linear-gradient(180deg, rgba(255,248,238,0.95), rgba(231,215,196,0.95)),
-    url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Wood_texture_02.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-}
+  <!-- Global Site Styles -->
+  <link rel="stylesheet" href="style.css">
 
-header {
-  background: rgba(72,47,32,0.9);
-  color: #f1e3c6;
-  padding: 2.5rem;
-  text-align: center;
-  border-bottom: 4px solid #c9a36a;
-}
+  <!-- Page-specific styles -->
+  <style>
+    body {
+      background: linear-gradient(
+        rgba(246,244,238,0.95),
+        rgba(246,244,238,0.95)
+      ),
+      url('https://upload.wikimedia.org/wikipedia/commons/7/79/Wood_texture.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
 
-header h1 {
-  font-family: 'Cinzel', serif;
-  letter-spacing: 0.15em;
-}
+    main {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: rgba(255,255,255,0.96);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    }
 
-main {
-  max-width: 950px;
-  margin: 3rem auto;
-  padding: 2.75rem;
-  background: rgba(255,250,243,0.96);
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-}
+    main p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
 
-section {
-  margin-bottom: 2.5rem;
-}
+    .projects-list {
+      margin: 2.5rem 0;
+      padding-left: 1.5rem;
+    }
 
-section h2 {
-  font-family: 'Cinzel', serif;
-  color: #5a3b25;
-  border-bottom: 2px solid #c9a36a;
-  padding-bottom: 0.5rem;
-}
+    .projects-list li {
+      margin-bottom: 1.2rem;
+    }
 
-section p {
-  line-height: 1.7;
-  margin-top: 1rem;
-}
+    .button {
+      display: inline-block;
+      padding: 0.6rem 1.5rem;
+      background: #5a4632;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      margin-top: 1.5rem;
+    }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
+    .button:hover {
+      background: #3f2f22;
+    }
 
-.project-card {
-  background: #f3e6d4;
-  padding: 1.75rem;
-  border-radius: 14px;
-  border: 1px solid rgba(120,85,60,0.4);
-}
-
-.project-card h3 {
-  font-family: 'Cinzel', serif;
-  color: #4a2f1b;
-  margin-bottom: 0.75rem;
-}
-
-.project-card p {
-  font-size: 0.95rem;
-}
-
-a.button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.6rem 1.6rem;
-  background: #5a3b25;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 28px;
-}
-
-a.button:hover {
-  background: #3f2818;
-}
-
-footer {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 0.85rem;
-}
-</style>
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -109,66 +73,61 @@ footer {
   <h1>Projects & Ministries</h1>
 </header>
 
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="beliefs.html">Beliefs</a>
+  <a href="trust.html">Trust</a>
+  <a href="history.html">History</a>
+  <a href="projects.html">Projects</a>
+  <a href="mission.html">Mission</a>
+</nav>
+
 <main>
 
-<section>
   <p>
-    The Christ Consciousness Church undertakes projects that reflect stewardship,
-    service, and lawful trust purpose, emphasizing care for land, people, and
-    spiritual development.
+    Projects and ministries of The Christ Consciousness Church are undertaken as
+    acts of stewardship, service, and public benefit, aligned with spiritual,
+    educational, and charitable purposes.
   </p>
-</section>
 
-<section>
-  <h2>Active Ministries</h2>
-  <div class="projects-grid">
+  <p>
+    All initiatives are non-commercial, non-political, and administered in
+    accordance with ecclesiastical trust principles.
+  </p>
 
-    <div class="project-card">
-      <h3>Land & Property Stewardship</h3>
-      <p>
-        Preservation and responsible use of trust property for worship,
-        reflection, and public benefit.
-      </p>
-    </div>
+  <ul class="projects-list">
+    <li>
+      <strong>Land Stewardship:</strong> Preservation, maintenance, and reverent use
+      of church-held land for sanctuary and community benefit.
+    </li>
+    <li>
+      <strong>Educational Instruction:</strong> Teaching, study groups, and
+      contemplative learning centered on Christ Consciousness.
+    </li>
+    <li>
+      <strong>Public Service:</strong> Outreach, aid, and cooperative service
+      initiatives consistent with charitable purpose.
+    </li>
+    <li>
+      <strong>Historical Preservation:</strong> Protection and documentation of
+      sacred sites and trust-held property.
+    </li>
+  </ul>
 
-    <div class="project-card">
-      <h3>Community Education</h3>
-      <p>
-        Instructional programs centered on spiritual awareness, moral
-        development, and lawful living.
-      </p>
-    </div>
+  <a class="button" href="pdfs/projects.pdf" target="_blank">
+    View Projects & Ministries (PDF)
+  </a>
 
-    <div class="project-card">
-      <h3>Sanctuary & Refuge</h3>
-      <p>
-        Maintaining spaces for peace, contemplation, and spiritual refuge.
-      </p>
-    </div>
+  <br>
 
-    <div class="project-card">
-      <h3>Resource Stewardship</h3>
-      <p>
-        Ethical management of water, land, and materials in alignment
-        with divine and natural law.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<a class="button" href="pdfs/projects.pdf" target="_blank">
-  View Projects & Ministries (PDF)
-</a>
-
-<br><br>
-<a href="index.html">← Return to Home</a>
+  <a class="back-link" href="index.html">← Return to Home</a>
 
 </main>
 
 <footer>
-© Ecclesiastical Trust — The Christ Consciousness Church
+  © Ecclesiastical Trust — The Christ Consciousness Church
 </footer>
 
 </body>
 </html>
+
