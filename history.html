@@ -10,15 +10,19 @@
 <style>
 body {
   font-family: 'Libre Baskerville', serif;
-  background: #f6f4ee;
   margin: 0;
-  color: #1f1f1f;
+  color: #2a2418;
+  background:
+    linear-gradient(180deg, rgba(248,244,235,0.96), rgba(236,229,214,0.96)),
+    url('https://upload.wikimedia.org/wikipedia/commons/8/87/Old_paper_texture.jpg');
+  background-size: cover;
 }
 
+/* HEADER */
 header {
-  background: #2f4f3a;
-  color: #f4e6b0;
-  padding: 2.5rem;
+  background: linear-gradient(180deg,#3a2f1e,#2a2115);
+  color: #efe4c6;
+  padding: 3rem 1rem;
   text-align: center;
 }
 
@@ -27,48 +31,84 @@ header h1 {
   letter-spacing: 0.15em;
 }
 
+/* NAV */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  padding: 1.2rem;
+  background: rgba(255,255,255,0.94);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.main-nav a {
+  font-family: 'Cinzel', serif;
+  text-decoration: none;
+  color: #3a2f1e;
+  letter-spacing: 0.12em;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+}
+
+.main-nav a:hover {
+  background: rgba(214,183,90,0.25);
+}
+
+/* CONTENT */
 main {
   max-width: 900px;
   margin: 3rem auto;
-  padding: 2.5rem;
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  padding: 2.7rem;
+  background: rgba(255,255,255,0.94);
+  border-radius: 20px;
+  box-shadow: 0 14px 35px rgba(0,0,0,0.18);
 }
 
 main p {
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+  font-size: 1.02rem;
 }
 
+/* TIMELINE */
 .timeline {
-  border-left: 3px solid #d6b75a;
+  border-left: 4px solid #b79b55;
   padding-left: 2rem;
-  margin-top: 2rem;
+  margin: 2.8rem 0;
 }
 
-.timeline p {
-  margin-bottom: 1.25rem;
+.timeline-entry {
+  margin-bottom: 1.8rem;
 }
 
+.timeline-entry strong {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+/* BUTTON */
 a.button {
   display: inline-block;
-  padding: 0.6rem 1.5rem;
-  background: #2f4f3a;
-  color: white;
+  padding: 0.6rem 1.7rem;
+  background: #3a2f1e;
+  color: #fff;
   text-decoration: none;
   border-radius: 30px;
-  margin-top: 1.5rem;
+  margin-top: 1.6rem;
 }
 
 a.button:hover {
-  background: #1f3628;
+  background: #2a2115;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  margin-top: 3rem;
+  margin: 3rem 0 2rem;
   font-size: 0.85rem;
+  color: #4a3f2c;
 }
 </style>
 </head>
@@ -79,44 +119,61 @@ footer {
   <h1>Church History</h1>
 </header>
 
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="beliefs.html">Beliefs</a>
+  <a href="trust.html">Trust</a>
+  <a href="history.html">History</a>
+  <a href="projects.html">Projects</a>
+  <a href="mission.html">Mission</a>
+</nav>
+
 <main>
 
   <p>
-    The Christ Consciousness Church is grounded in a lineage of spiritual assembly,
-    stewardship, and public service, rooted in historic land use and lawful trust
-    governance.
+    The Christ Consciousness Church stands within a documented lineage of religious
+    assembly, stewardship, and public service rooted in historic land use and
+    ecclesiastical continuity.
   </p>
 
   <p>
-    The property known as 77 Brinkerhoff Street has long served as a site for
-    gathering, instruction, reflection, and community use consistent with religious
-    and charitable purposes.
+    The property known as 77 Brinkerhoff Street has long served as a place of gathering,
+    instruction, reflection, and charitable activity consistent with religious and
+    public benefit purposes.
   </p>
 
   <div class="timeline">
-    <p>
-      <strong>19th Century:</strong> The land and surrounding structures are documented
-      as places of residence, assembly, and civic participation, reflecting early
-      American religious and communal life.
-    </p>
 
-    <p>
-      <strong>20th Century:</strong> Continued use for learning, fellowship, and
-      community-centered purposes, maintaining alignment with public benefit.
-    </p>
+    <div class="timeline-entry">
+      <strong>19th Century</strong>
+      <p>
+        The land and surrounding structures are recorded as sites of residence,
+        assembly, and civic participation, reflecting early American religious and
+        communal life.
+      </p>
+    </div>
 
-    <p>
-      <strong>21st Century:</strong> The site is formally stewarded under ecclesiastical
-      trust principles, preserving its religious character and lawful protection.
-    </p>
+    <div class="timeline-entry">
+      <strong>20th Century</strong>
+      <p>
+        Continued use for learning, fellowship, and community-centered purposes,
+        maintaining alignment with religious observance and charitable function.
+      </p>
+    </div>
+
+    <div class="timeline-entry">
+      <strong>21st Century</strong>
+      <p>
+        The site is formally stewarded under ecclesiastical trust principles, preserving
+        its sacred character, lawful protection, and continuity of use.
+      </p>
+    </div>
+
   </div>
 
   <a class="button" href="pdfs/history.pdf" target="_blank">
     View Full Historical Record (PDF)
   </a>
-
-  <br><br>
-  <a href="index.html">← Return to Home</a>
 
 </main>
 
