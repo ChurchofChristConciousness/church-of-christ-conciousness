@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About • Church of Christ Consciousness</title>
+
+
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body class="theme-stone">
+
+
+<header class="hero hero-stone">
+<div class="hero-overlay stone-overlay"></div>
+<div class="pillar-lines"></div>
+
+
+<nav class="nav">
+<div class="nav-logo">✝ Christ Consciousness</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="doctrine.html">Doctrine</a></li>
+<li><a href="governance.html">Governance</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+
+<div class="hero-content">
+<h1>Our Foundation</h1>
+<p class="subtitle">Built Upon the Rock of Christ</p>
+</div>
+</header>
+
+
+<main class="content slow-spacing">
+
+
+<section class="sacred-section stone-frame">
+<h2>Authority & Lineage</h2>
+<p>
+The Church of Christ Consciousness stands upon spiritual authority derived
+not from institutions of man, but from divine lineage — the inheritance
+of Sonship
