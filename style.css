@@ -1,199 +1,406 @@
-/* =========================================================
-   GLOBAL RESET & BASE
-   ========================================================= */
+# Church of Christ Consciousness
+
+## Sacred, Holy, Artistic Website Rebuild (GitHub Pages Ready)
+
+Below is a **clean, modern, reverent rebuild** of the core site code designed for a **holy / sacred / Christ‑centered aesthetic** while staying lightweight and usable on GitHub Pages.
+
+The design intention:
+
+* ✨ Sacred, luminous, calm (light, gold, deep blue tones)
+* 🕊️ Spiritual without clutter
+* 📜 Easy to read scripture / doctrine
+* 🌿 Gentle motion, not flashy
+* 🏛️ Timeless church feel (not trendy, not corporate)
+
+---
+
+## 📁 Recommended Repository Structure
+
+```
+/
+├─ index.html
+├─ about.html
+├─ doctrine.html
+├─ governance.html
+├─ contact.html
+├─ assets/
+│  ├─ images/
+│  │  ├─ light-rays.jpg
+│  │  ├─ parchment-texture.png
+│  │  └─ cross-subtle.svg
+│  └─ fonts/
+└─ style.css
+```
+
+---
+
+## 🕊️ index.html (Replace Entire File)
+
+````html
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church of Christ Consciousness</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body class="theme-gold">
+
+<header class="hero hero-gold">
+  <div class="hero-overlay"></div>
+  <div class="ornamental-lines"></div>
+
+  <nav class="nav">
+    <div class="nav-logo">✝ Christ Consciousness</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="doctrine.html">Doctrine</a></li>
+      <li><a href="governance.html">Governance</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Church of Christ Consciousness</h1>
+    <p class="subtitle">Awakening the Living Presence of Christ Within</p>
+  </div>
+</header>
+
+<main class="content">
+
+<section class="sacred-section framed">
+  <h2>Our Sacred Mission</h2>
+  <p>
+    The Church of Christ Consciousness exists to restore the living awareness
+    of Christ within humanity — not as distant doctrine, but as present truth,
+    divine order, and eternal law written upon the heart.
+  </p>
+</section>
+
+<section class="sacred-section alt depth">
+  <h2>The Christ Within</h2>
+  <p>
+    Christ Consciousness is the awakened state of divine alignment, love,
+    authority, and spiritual inheritance — the realization of Sonship with God.
+  </p>
+</section>
+
+<section class="scripture gold-shadow">
+  <blockquote>
+    “The Kingdom of God is within you.”
+    <span>— Luke 17:21</span>
+  </blockquote>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-divider"></div>
+  <p>© Church of Christ Consciousness • Established in Truth</p>
+</footer>
+
+</body>
+</html>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Church of Christ Consciousness</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-overlay"></div>
+  <nav class="nav">
+    <div class="nav-logo">✝ Christ Consciousness</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="doctrine.html">Doctrine</a></li>
+      <li><a href="governance.html">Governance</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <h1>Church of Christ Consciousness</h1>
+    <p class="subtitle">Awakening the Living Presence of Christ Within</p>
+  </div>
+</header>
+
+<main class="content">
+
+<section class="sacred-section">
+  <h2>Our Sacred Mission</h2>
+  <p>
+    The Church of Christ Consciousness exists to restore the living awareness
+    of Christ within humanity — not as distant doctrine, but as present truth,
+    divine order, and eternal law written upon the heart.
+  </p>
+</section>
+
+<section class="sacred-section alt">
+  <h2>The Christ Within</h2>
+  <p>
+    Christ Consciousness is the awakened state of divine alignment, love,
+    authority, and spiritual inheritance. It is the realization of Sonship
+    with God — expressed through righteous living, wisdom, and peace.
+  </p>
+</section>
+
+<section class="scripture">
+  <blockquote>
+    “The Kingdom of God is within you.”
+    <span>— Luke 17:21</span>
+  </blockquote>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>© Church of Christ Consciousness • Established in Truth</p>
+</footer>
+
+</body>
+</html>
+````
+
+---
+
+## ✨ style.css (Replace Entire File)
+
+```css
+/* ───────────────────────────────
+   SACRED ROOT PALETTE
+─────────────────────────────── */
+:root {
+  --deep-blue: #0b1d2a;
+  --deep-blue-ink: #08141e;
+  --royal-gold: #c9a24d;
+  --royal-gold-dark: #9f7c32;
+  --soft-gold: #e6d8a8;
+  --parchment: #f6f1e7;
+  --stone: #d8d4cc;
+  --ink: #1e1e1e;
+}
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Libre Baskerville', serif;
-  color: #1f1f1f;
-  background: #f6f4ee;
-}
-
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-header {
-  text-align: center;
-  padding: 3.5rem 1rem;
-  background: linear-gradient(180deg, #2f4f3a, #1f3628);
-  color: #f4e6b0;
-}
-
-header h1 {
-  font-family: 'Cinzel', serif;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.8rem;
-}
-
-header p {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-/* =========================================================
-   NAVIGATION (UNIFIED ACROSS ALL PAGES)
-   ========================================================= */
-
-.main-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.6rem;
-  padding: 1.2rem;
-  background: rgba(255, 255, 255, 0.94);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-.main-nav a {
-  font-family: 'Cinzel', serif;
-  text-decoration: none;
-  color: #2f4f3a;
-  letter-spacing: 0.12em;
-  padding: 0.4rem 0.7rem;
-  border-radius: 6px;
-  transition: background 0.2s ease;
-}
-
-.main-nav a:hover {
-  background: rgba(214, 183, 90, 0.25);
-}
-
-/* Active page indicator */
-.main-nav a.active {
-  background: rgba(214, 183, 90, 0.35);
-}
-
-/* =========================================================
-   MAIN CONTENT WRAPPER
-   ========================================================= */
-
-main {
-  max-width: 1000px;
-  margin: 3.5rem auto;
-  padding: 2.5rem;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-main p {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--parchment);
   line-height: 1.7;
-  margin-bottom: 1.5rem;
 }
 
-/* =========================================================
-   SECTION GRID (INDEX PAGE)
-   ========================================================= */
-
-.section-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2.5rem;
+/* ───────────────────────────────
+   HERO THEMES
+─────────────────────────────── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-/* =========================================================
-   CARDS (INDEX PAGE)
-   ========================================================= */
+.hero-gold {
+  background: url('assets/images/light-rays.jpg') center/cover no-repeat;
+}
 
-.card {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 2.5rem;
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(11, 29, 42, 0.88),
+    rgba(11, 29, 42, 0.65)
+  );
+}
+
+/* Thin sacred lines */
+.ornamental-lines {
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(201,162,77,0.08),
+      rgba(201,162,77,0.08) 1px,
+      transparent 1px,
+      transparent 14px
+    );
+  pointer-events: none;
+}
+
+/* ───────────────────────────────
+   NAVIGATION
+─────────────────────────────── */
+.nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+}
+
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--soft-gold);
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  position: relative;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--royal-gold), transparent);
+  left: 0;
+  bottom: -6px;
+  transition: width 0.4s ease;
+}
+
+.nav a:hover::after { width: 100%; }
+
+/* ───────────────────────────────
+   HERO TEXT
+─────────────────────────────── */
+.hero-content {
+  position: relative;
+  z-index: 2;
   text-align: center;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  top: 35vh;
+  padding: 0 2rem;
 }
 
-.card i {
-  font-size: 2.5rem;
-  color: #2f4f3a;
-  margin-bottom: 1.2rem;
+.hero-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 0 4px 18px rgba(0,0,0,0.55);
 }
 
-.card h2 {
-  font-family: 'Cinzel', serif;
-  letter-spacing: 0.12em;
-  margin-bottom: 0.6rem;
-}
-
-.card p {
-  font-size: 0.95rem;
-}
-
-.card a {
-  display: inline-block;
+.subtitle {
   margin-top: 1rem;
-  padding: 0.6rem 1.6rem;
-  background: #2f4f3a;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--soft-gold);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
 }
 
-.card a:hover {
-  background: #1f3628;
+/* ───────────────────────────────
+   CONTENT DEPTH & FRAMING
+─────────────────────────────── */
+.content {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 2rem;
 }
 
-/* =========================================================
-   BUTTONS (PDF + ACTION LINKS)
-   ========================================================= */
-
-a.button {
-  display: inline-block;
-  padding: 0.6rem 1.6rem;
-  background: #2f4f3a;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 30px;
+.sacred-section {
+  margin-bottom: 4rem;
 }
 
-a.button:hover {
-  background: #1f3628;
+.sacred-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  color: var(--deep-blue);
+  margin-bottom: 1rem;
 }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+.sacred-section.framed {
+  border: 1px solid rgba(201,162,77,0.35);
+  padding: 2.5rem;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.3),
+    0 12px 30px rgba(0,0,0,0.08);
+}
 
-footer {
+.sacred-section.alt {
+  background: rgba(11,29,42,0.05);
+  border-left: 4px solid var(--royal-gold);
+  padding: 2.5rem;
+}
+
+.depth {
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* ───────────────────────────────
+   SCRIPTURE
+─────────────────────────────── */
+.scripture {
+  margin: 6rem 0;
   text-align: center;
-  padding: 2rem;
-  font-size: 0.85rem;
-  background: #e3e0d8;
 }
 
-/* =========================================================
-   PAGE-SPECIFIC THEMES
-   ========================================================= */
-
-/* Mission page – sacred blue paisley */
-body.sacred-theme {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(230, 238, 248, 0.95),
-      rgba(210, 225, 245, 0.95)
-    ),
-    url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Paisley_pattern_blue.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+.scripture blockquote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--deep-blue);
 }
 
-/* Projects page – wood / earth tone */
-body.wood-theme {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(245, 235, 220, 0.95),
-      rgba(230, 215, 195, 0.95)
-    ),
-    url("https://upload.wikimedia.org/wikipedia/commons/6/6f/Wood_texture.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+.gold-shadow blockquote {
+  text-shadow: 0 2px 10px rgba(201,162,77,0.45);
 }
+
+.scripture span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--royal-gold-dark);
+}
+
+/* ───────────────────────────────
+   FOOTER
+─────────────────────────────── */
+.footer {
+  background: linear-gradient(
+    to bottom,
+    var(--deep-blue),
+    var(--deep-blue-ink)
+  );
+  color: var(--soft-gold);
+  text-align: center;
+  padding: 2.5rem 2rem;
+}
+
+.footer-divider {
+  height: 1px;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, transparent, var(--royal-gold), transparent);
+}
+```
