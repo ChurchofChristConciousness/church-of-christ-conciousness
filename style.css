@@ -237,3 +237,33 @@ background: rgba(255,255,255,0.2);
 border-left: 4px solid #00bcd4;
 text-shadow: 0 0 15px rgba(0,188,212,0.35);
 }
+/* Trust Page Theme with Handkerchief Pattern */
+body.theme-trust {
+background: linear-gradient(to bottom, #fdfbf5, #f5f2eb);
+}
+.hero-trust {
+background: url('assets/images/trust-foreground.png') center/cover no-repeat;
+position: relative;
+}
+.trust-overlay {
+position: absolute;
+inset: 0;
+background: rgba(212,175,55,0.2);
+}
+.handkerchief-pattern {
+position: absolute;
+inset: 0;
+background-image: url('assets/images/handkerchief-pattern.png');
+background-repeat: repeat;
+opacity: 0.25;
+pointer-events: none;
+}
+.sacred-section.trust-overview, .sacred-section.trust-documents {
+background: rgba(255,255,255,0.85);
+box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+.scripture.trust blockquote {
+background: rgba(255,255,255,0.2);
+border-left: 4px solid #d4af37;
+text-shadow: 0 0 15px rgba(212,175,55,0.35);
+}
