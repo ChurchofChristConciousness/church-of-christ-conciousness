@@ -267,3 +267,36 @@ background: rgba(255,255,255,0.2);
 border-left: 4px solid #d4af37;
 text-shadow: 0 0 15px rgba(212,175,55,0.35);
 }
+/* Beliefs Page Theme with Sacred Background */
+body.theme-beliefs {
+background: linear-gradient(to bottom, #fefdf9, #f6f5f0);
+}
+.hero-beliefs {
+background: url('assets/images/beliefs-hero.jpg') center/cover no-repeat;
+position: relative;
+}
+.beliefs-overlay {
+position: absolute;
+inset: 0;
+background: rgba(0,70,127,0.25);
+}
+.sacred-pattern {
+position: absolute;
+inset: 0;
+background-image: url('assets/images/sacred-pattern.png');
+background-repeat: repeat;
+opacity: 0.2;
+pointer-events: none;
+}
+.sacred-section.beliefs-overview {
+background: rgba(255,255,255,0.85);
+box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+padding: 2rem;
+border-radius: 12px;
+}
+.scripture.beliefs blockquote {
+background: rgba(255,255,255,0.2);
+border-left: 4px solid #00467f;
+text-shadow: 0 0 15px rgba(0,70,127,0.35);
+padding-left: 1rem;
+}
